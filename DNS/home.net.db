@@ -1,0 +1,38 @@
+$TTL 86400
+@   IN  SOA     dns.home.net. root.home.net. (
+                                                1034
+                                                3H      ;Refresh
+                                                15M     ;Retry
+                                                1W      ;Expire
+                                                1D      ;Minimum TTL
+                                                )
+
+;Name Server Information
+@	IN  NS      dns.home.net.
+@	IN  	A	10.0.0.90
+@	IN	A	10.0.0.91
+@	IN	A	10.0.0.93
+
+;IP address of Name Server
+dns				IN	A	10.0.0.99
+
+*.okd-cluster.home.net.	 10 	IN 	A 	10.0.0.90
+*.apps.home.net.	300	IN	A	10.0.0.90
+
+
+okd-cluster 	IN	A	10.0.0.90
+okd-node1	IN	A	10.0.0.91
+okd-infranode1	IN	A	10.0.0.93
+
+
+cimaster	IN	A	10.0.0.94
+
+kcluster	IN	A	10.0.0.95
+knode1		IN	A	10.0.0.96
+knode2		IN	A	10.0.0.97
+
+
+
+
+kclustert	IN	A	10.0.0.98
+knode1t		IN	A	10.0.0.92
