@@ -1,2 +1,2 @@
-# Learning
-This repository will be used for learning purposes.
+# DevOps Learning
+This repository will be used for DevOps learning.
