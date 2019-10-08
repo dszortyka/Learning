@@ -1,0 +1,44 @@
+$TTL 86400
+@   IN  SOA     dns.home.net. root.home.net. (
+                                                1034
+                                                1H      ;Refresh
+                                                5M     ;Retry
+                                                1D      ;Expire
+                                                1D      ;Minimum TTL
+                                                )
+
+;Name Server Information
+@	IN	NS	dns.home.net.
+@	IN	PTR	home.net.
+
+
+dns		IN	A	10.0.0.99
+okd-cluster	IN	A	10.0.0.90
+okd-node1	IN	A	10.0.0.91
+okd-infranode1	IN	A	10.0.0.93
+
+
+
+cimaster	IN	A	10.0.0.94
+
+kcluster	IN	A	10.0.0.95
+knode1		IN	A	10.0.0.96
+knode2		IN	A	10.0.0.97
+
+kclustert	IN	A	10.0.0.98
+knode1t		IN	A	10.0.0.92
+
+;Reverse lookup for Name Server
+99	IN	PTR	dns.home.net.
+;90	IN	PTR     okd-cluster.home.net.
+
+;PTR Record IP address to HostName
+90	IN	PTR	okd-cluster.home.net.
+91      IN  	PTR     okd-node1.home.net.
+93      IN  	PTR     okd-infranode1.home.net.
+94	IN	PTR	cimaster.home.net.
+95	IN	PTR	kcluster.home.net.
+96	IN	PTR	knode1.home.net.
+97	IN	PTR	knode2.home.net.
+98	IN	PTR	kclustert.home.net.
+92	IN	PTR	knode1t.home.net.
